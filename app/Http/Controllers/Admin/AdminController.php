@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Admin;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 class AdminController extends Controller
 {
@@ -29,6 +30,12 @@ class AdminController extends Controller
 
         Auth::guard('admin')->logout();
         return redirect('/');
+    }
+    function list_clients(Request $request){
+
+        Auth::guard('admin');
+        $users=user::all();
+        return view('dashboard.admin.listes_des_clients')->with('users',$users);
     }
     
 }

@@ -53,11 +53,13 @@ Route::prefix('admin')->name('admin.')->group(function(){
     Route::middleware(['auth:admin','PreventBackHistory'])->group(function(){
         Route::view('/home','dashboard.admin.home')->name('home');
         Route::post('/logout',[AdminController::class,'logout'])->name('logout');
+        Route::get('/Listes_des_clients',[AdminController::class,'list_clients'])->name('Listes_des_clients');
+        
+        Route::view('/Nouveau_client','dashboard.admin.Nouveau_client')->name('Nouveau_client');
 
 
     });
-    Route::view('/Listes_des_clients','dashboard.admin.Listes_des_clients')->name('Listes_des_clients');
-    Route::view('/Nouveau_client','dashboard.admin.Nouveau_client')->name('Nouveau_client');
+
     
 
 });
