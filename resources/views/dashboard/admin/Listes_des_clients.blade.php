@@ -17,7 +17,7 @@
             <div id="example2_wrapper" class="dataTables_wrapper dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"></div><div class="col-sm-12 col-md-6"></div></div><div class="row"><div class="col-sm-12">
 
               <div class="d-flex justify-content-end mb-4">
-                <a href="#" class="btn btn-primary">Ajouter un nouvel client</a>
+                <a href="{{ROUTE('admin.Nouveau_client')}}" class="btn btn-primary">Ajouter un nouvel client</a>
               </div>
               <table id="example2" class="table table-bordered table-hover dataTable dtr-inline" aria-describedby="example2_info">
               <thead>
@@ -27,20 +27,22 @@
                 <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="">Nom</th>
                 <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="">telephone</th>
                 <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="">email</th>
-                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="">Action</th>
+                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="">image client</th>
               </tr>
               </thead>
               <tbody>
               @foreach ($users as $user)
               <tr>
+               
                 <td>{{$user->cin}}</td>
                 <td>{{$user->prenom}}</td>
                 <td>{{$user->nom}}</td>
                 <td>{{$user->telephone}}</td>
                 <td>{{$user->email}}</td>
+                <td>{{$user->picture}}</td>
                 <td>
-                  <a href="#" class="btn btn-info">Modifier</a>
-                  <a href="#" class="btn btn-danger">Supprimer</a>
+                  <a href="modifier_client/{{$user->id}}" class="btn btn-info">Modifier</a>
+                  <a href="supprimer_client/{{$user->id}}" class="btn btn-danger">Supprimer</a>
                 </td>
               </tr>
                   
