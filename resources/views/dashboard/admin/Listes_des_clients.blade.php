@@ -22,27 +22,33 @@
               <table id="example2" class="table table-bordered table-hover dataTable dtr-inline" aria-describedby="example2_info">
               <thead>
               <tr>
+                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="">image client</th>
                 <th class="sorting sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">cin</th>
                 <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="">Prenom</th>
                 <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="">Nom</th>
                 <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="">telephone</th>
                 <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="">email</th>
-                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="">image client</th>
+        
               </tr>
               </thead>
               <tbody>
               @foreach ($users as $user)
               <tr>
-               
+                <td>
+                  <img src="{{ asset('/uploads/Clients/'.$user->picture)}}"  width="70px" height="70px" alt="Image">
+                </td>
                 <td>{{$user->cin}}</td>
                 <td>{{$user->prenom}}</td>
                 <td>{{$user->nom}}</td>
                 <td>{{$user->telephone}}</td>
-                <td>{{$user->email}}</td>
-                <td>{{$user->picture}}</td>
+                <td>{{$user->email}}</td>    
+
+                
+               
                 <td>
-                  <a href="modifier_client/{{$user->id}}" class="btn btn-info">Modifier</a>
-                  <a href="supprimer_client/{{$user->id}}" class="btn btn-danger">Supprimer</a>
+                  <a href="#" class="btn btn-success" style="width: 100px">Infos</a>
+                  <a href="modifier_client/{{$user->id}}" class="btn btn-info"style="width: 100px">Modifier</a>
+                  <a href="supprimer_client/{{$user->id}}" class="btn btn-danger"style="width: 100px">Supprimer</a>
                 </td>
               </tr>
                   
@@ -201,4 +207,5 @@
   </div>
   <!-- /.container-fluid -->
 </section>
+
 @endsection

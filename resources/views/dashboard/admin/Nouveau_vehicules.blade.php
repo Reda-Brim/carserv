@@ -14,7 +14,7 @@
  
 
     
-    <form action="{{route('admin.create_vehicule')}}" method="POST" autocomplete="off">
+    <form action="{{route('admin.create_vehicule')}}" method="POST" autocomplete="off" enctype="multipart/form-data">
       @if(Session::get('succes'))
       <div class="alert alert-success">
         {{Session::get('succes')}}

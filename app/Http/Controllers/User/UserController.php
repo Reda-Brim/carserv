@@ -31,8 +31,17 @@ class UserController extends Controller
         $user->prenom=$request->prenom;
         $user->nom=$request->nom;
         $user->telephone=$request->telephone;
-        $user->picture=$request->picture;
+        
         $user->email=$request->email;
+        if($request->hasfile('picture'))
+        {
+            $file = $request->file('picture');
+            $extention = $file->getClientOriginalExtension();
+            $filename = time().'.'.$extention;
+            $file->move('uploads/Clients/', $filename);
+            
+            $user->picture=$filename;
+        }
         
         
         $user->password = bcrypt($request->password);

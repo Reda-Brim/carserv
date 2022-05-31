@@ -19,7 +19,7 @@
                 <div class="d-flex justify-content-end mb-4">
                   <a href="{{Route('admin.Nouveau_vehicules')}}" class="btn btn-primary">Ajouter un nouvel vehicule</a>
                 </div>
-                <table id="example2" class="table table-bordered table-hover dataTable dtr-inline" aria-describedby="example2_info">
+                <table id="example2" class="table table-bordered table-hover dataTable dtr-inline" aria-describedby="example2_info" >
                 <thead>
                 <tr>
                   <th class="sorting sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Matricule</th>
@@ -28,6 +28,7 @@
                   <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="">Modele</th>
                   <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="">Carburant</th>
                   <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="">Voiture Image</th>
+                  <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="">Actions</th>
               
                 </tr>
                 </thead>
@@ -40,10 +41,15 @@
                   <td>{{$vehicule->Puissance}}</td>
                   <td>{{$vehicule->Modele}}</td>
                   <td>{{$vehicule->Carburant}}</td>
-                  <td>{{$vehicule->voitureImage}}</td>
                   <td>
-                    <a href="modifier_vehicule/{{$vehicule->id}}" class="btn btn-info">Modifier</a>
-                    <a href="supprimer_vehicule/{{$vehicule->id}}" class="btn btn-danger">Supprimer</a>
+                    <img src=" {{ asset('/uploads/vehicules/'.$vehicule->voitureImage)}}"  width="70px" height="70px" alt="Image">
+           
+                    {{-- {{$vehicule->voitureImage}}</td> --}}
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-success" style="width: 100px">Infos</a>
+                    <a href="modifier_vehicule/{{$vehicule->id}}" class="btn btn-info" style="width: 100px">Modifier</a>
+                    <a href="supprimer_vehicule/{{$vehicule->id}}" class="btn btn-danger"style="width: 100px">Supprimer</a>
                   </td>
                 </tr>
                     

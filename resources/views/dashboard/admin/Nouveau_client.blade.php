@@ -15,7 +15,7 @@
    
   
       
-      <form action="{{route('user.create')}}" method="POST" autocomplete="off">
+      <form action="{{route('user.create')}}" method="POST" autocomplete="off" enctype="multipart/form-data">
         @if(Session::get('succes'))
         <div class="alert alert-success">
           {{Session::get('succes')}}
@@ -53,7 +53,7 @@
         <div class="row">
           <div class="col-md-6 mb-4">
             <div class="form-outline">
-              <input type="cin" name="cin" class="form-control" placeholder="cin" >
+              <input type="text" name="cin" class="form-control" placeholder="cin" value="{{old ('cin')}}">
               <label class="form-label" for="cin">CIN</label>
               <span class="text-danger">@error('cin'){{$message}}@enderror</span>
             </div>

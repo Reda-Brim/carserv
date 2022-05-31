@@ -21,7 +21,7 @@ class CreateVehiculesTable extends Migration
             $table->integer('CoutParJour');       
             $table->string('Modele');
             $table->string('Carburant');
-            $table->string('voitureImage')->nullable(); 
+            $table->string('voitureImage'); 
             $table->timestamps();
         });
     }

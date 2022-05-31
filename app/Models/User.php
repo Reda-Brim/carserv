@@ -45,11 +45,5 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-    public function getPictureAttribute($value){
-        if($value){
-            return asset('Admin-assets/images/'.$value);
-        }else{
-            return asset('Admin-assets/images/no-image.png');
-        }
-    }
+
 }

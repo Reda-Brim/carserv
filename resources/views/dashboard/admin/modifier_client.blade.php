@@ -80,7 +80,7 @@
                           </div>
           
                           <div class="form-outline mb-4">
-                            <input type="password" name="cpassword" class="form-control" placeholder="confirmer nouveau mot de passe password" >
+                            <input type="password" name="cpassword" class="form-control" placeholder="confirmer nouveau mot de passe password" value="{{$Info_client->password}}" >
                             <label class="form-label" for="cpassword">Confirmer Mot de passe</label>
                             <span class="text-danger">@error('cpassword'){{$message}}@enderror</span>
                           </div>
