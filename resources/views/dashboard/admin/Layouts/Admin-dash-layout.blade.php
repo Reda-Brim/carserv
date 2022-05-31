@@ -230,13 +230,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </a>
         <ul class="nav nav-treeview">
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{route('admin.Liste_vehicules')}}" class="nav-link">
               <i class="fa fa-list nav-icon"></i>
               <p>Listes des véhicules </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{route('admin.Nouveau_vehicules')}}" class="nav-link">
               <i class="fa fa-plus-square nav-icon"></i>
               <p>Nouveau véhicule</p>
             </a>

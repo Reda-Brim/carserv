@@ -12,7 +12,7 @@
                 <div class="card-header">
                     <h4>
                        Modifier Vehicule 
-                        <a href="" class="btn btn-danger float-right">Retour</a>                      
+                        <a href="{{route('admin.Liste_vehicules')}}" class="btn btn-danger float-right">Retour</a>                      
                     </h4>                   
                 </div>
                 <div class="card-body">
