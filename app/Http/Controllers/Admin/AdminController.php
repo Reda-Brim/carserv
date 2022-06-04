@@ -321,9 +321,20 @@ class AdminController extends Controller
 
     }
 
+    function impression_clients(Request $request){
+
+        Auth::guard('admin');
+        $users=user::all();
+        return view('dashboard.admin.impression_clients')-> with( compact('users'));
+    }
+    function impression_vehicules(Request $request){
+
+        Auth::guard('admin');
+        $vehicules=vehicule::all();
+        return view('dashboard.admin.impression_vehicules')-> with( compact('vehicules'));
+    }
+
     
-
-
 
 
 

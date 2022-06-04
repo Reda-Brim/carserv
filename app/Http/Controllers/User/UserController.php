@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
+   
     function create(Request $request){
         $request->validate([
             'cin'=>'required|max:10',
@@ -78,4 +79,7 @@ class UserController extends Controller
         Auth::guard('web')->logout();
         return redirect('/');
     }
+
+
+           
 }

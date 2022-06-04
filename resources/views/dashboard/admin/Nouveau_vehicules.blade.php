@@ -7,7 +7,7 @@
 @section('content')
 <div class="content" style=" background: hsla(0, 0%, 100%, 0.55);margin-left: 25%; margin-right:25%">
 <div class="card-header ">
-    <h4 ><strong>Nouveau Vehicules</strong> <a href="{{route('admin.Liste_vehicules')}}" class="btn btn-danger float-right">Retour</a></h4>
+    <h4 ><strong>Nouveau Véhicule</strong> <a href="{{route('admin.Liste_vehicules')}}" class="btn btn-danger float-right">Retour</a></h4>
     
   </div>
 <div class="card-body p-5 shadow-5 text-center" >
@@ -32,16 +32,16 @@
       <div class="row">
         <div class="col-md-6 mb-4">
             <div class="form-outline">
-                <input type="Modele" name="Modele" class="form-control" placeholder="Modele" value="{{old ('Modele')}}">
-                <label class="form-label" for="Modele">Modele</label>
+                <input type="Modele" name="Modele" class="form-control" placeholder="Modéle" value="{{old ('Modele')}}">
+                <label class="form-label" for="Modele">Modéle</label>
                 <span class="text-danger">@error('Modele'){{$message}}@enderror</span>
               </div>
             </div>
 
         <div class="col-md-6 mb-4">
           <div class="form-outline">
-            <input type="text" name="matricule" class="form-control" placeholder="matricule" value="{{old ('matricule')}}"/>
-            <label class="form-label" for="matricule">matricule</label>
+            <input type="text" name="matricule" class="form-control" placeholder="Matricule" value="{{old ('matricule')}}"/>
+            <label class="form-label" for="matricule">Matricule</label>
             <span class="text-danger">@error('matricule'){{$message}}@enderror</span>
           </div>
         </div>
@@ -52,8 +52,8 @@
       <div class="row">
         <div class="col-md-6 mb-4">
             <div class="form-outline">
-              <input type="number" name="AnneeModele" class="form-control" placeholder="AnneeModele" value="{{old ('AnneeModele')}}" >
-              <label class="form-label" for="AnneeModele">Année du modele</label>
+              <input type="number" name="AnneeModele" class="form-control" placeholder="Année Modéle" value="{{old ('AnneeModele')}}" >
+              <label class="form-label" for="AnneeModele">Année du modéle</label>
               <span class="text-danger">@error('AnneeModele'){{$message}}@enderror</span>
             </div>
           </div>
@@ -79,8 +79,8 @@
         </div>
         <div class="col-md-6 mb-4">
           <div class="form-outline mb-1">
-             <input type="number" name="CoutParJour" class="form-control" placeholder="CoutParJour" value="{{old ('CoutParJour')}}" >
-             <label class="form-label" for="CoutParJour">CoutParJour</label>
+             <input type="number" name="CoutParJour" class="form-control" placeholder="Cout Par Jour" value="{{old ('CoutParJour')}}" >
+             <label class="form-label" for="CoutParJour">Cout Par Jour</label>
              <span class="text-danger">@error('CoutParJour'){{$message}}@enderror</span>
       </div>
     </div>
@@ -91,8 +91,8 @@
 
 
       <div class="form-outline mb-4">
-        <input type="file" name="voitureImage" class="form-control" placeholder="voitureImage" value="{{old ('voitureImage')}}">
-        <label class="form-label" for="voitureImage">image voiture</label>
+        <input type="file" name="voitureImage" class="form-control" placeholder="Image voiture" value="{{old ('voitureImage')}}">
+        <label class="form-label" for="voitureImage">Image voiture</label>
         <span class="text-danger">@error('voitureImage'){{$message}}@enderror</span>
       </div>
 
@@ -102,7 +102,7 @@
       <!-- Submit button -->
       <div class="form-group mb-3 ">
        
-        <button type="submit" class="btn btn-primary float-left">Ajouter vehicule</button>
+        <button type="submit" class="btn btn-primary float-left">Ajouter véhicule</button>
 
     </div>
 

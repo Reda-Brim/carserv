@@ -57,9 +57,9 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
             <a href="index.html" class="nav-item nav-link active">Accueil</a>
-            <a href="about.html" class="nav-item nav-link">À propos</a>
-            <a href="service.html" class="nav-item nav-link">FAQ</a>
-            <a href="#mb-5" class="nav-item nav-link">Contact</a>
+            <a href = "#propos" class="nav-item nav-link">À propos</a>
+            <a href="#faq" class="nav-item nav-link">FAQ</a>
+            <a href="#tem" class="nav-item nav-link">Témoignage</a>
             </div>
             
         </div>
@@ -74,7 +74,7 @@
     <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="w-100" src="welcome/img/carousel-bg-1.jpg" alt="Image">
+                <img class="w-100" src="welcome/img/res.jfif" alt="Image">
                 <div class="carousel-caption d-flex align-items-center">
                     <div class="container">
                         <div class="row align-items-center justify-content-center justify-content-lg-start">
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="w-100" src="welcome/img/carousel-bg-2.jpg" alt="Image">
+                <img class="w-100" src="welcome/img/ll.jpg" alt="Image">
                 <div class="carousel-caption d-flex align-items-center">
                     <div class="container">
                         <div class="row align-items-center justify-content-center justify-content-lg-start">
@@ -156,7 +156,7 @@
         <div class="row g-5">
             <div class="col-lg-6 pt-4" style="min-height: 400px;">
                 <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
-                    <img class="position-absolute img-fluid w-100 h-100" src="welcome/img/about.jpg" style="object-fit: cover;" alt="">
+                    <img class="position-absolute img-fluid w-100 h-100" src="welcome/img/nm.jpg" style="object-fit: cover;" alt="">
                     <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5" style="background: rgba(0, 0, 0, .08);">
                         <h1 class="display-4 text-white mb-0">15 <span class="fs-4">Years</span></h1>
                         <h4 class="text-white">Experience</h4>
@@ -166,45 +166,63 @@
             <div class="col-lg-6">
                   <div class="text-center wow fadeInUp" data-wow-delay="0.1s"> 
                     <div style="text-align:center">            
-                        <h1 class="text-primary text-uppercase">Pourquoi CarServ?</h1>
+                        <h1 id= "propos" class="text-primary text-uppercase">Pourquoi CarServ?</h1>
                       </div>
                     </div>
-                <h2 class="mb-4"><span class="text-primary">CarServ</span> Est le meilleur endroit pour vous... Grâce à ses multiples fonctions... </h2>
-                <p class="mb-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CarServ est une solution web complète pour la location et l'achat des voitures en ligne, vous permet de connaître, en temps réel, la disponibilité des voitures dans le parc, et de réaliser des paiements ou opérations périodiques que vous vous devez d'honorer. Elle autorise la centralisation et le suivi de chacune de vos locations et/ou prestations. De la gestion des réservations à l’organisation des réceptions, tout en passant par l’édition de vos devis.</p>
-                <div class="row g-4 mb-3 pb-3">
-                    <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="col-12 wow fadeInUp" data-wow-delay="0.2s"> 
+                 <h4 class="mb-4"><span class="text-primary"><B>CarServ</span> Est le meilleur endroit pour vous... Grâce à ses multiples fonctions...</B> </h4>
+                    </div>
+                    <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
+                 <p class="mb-4"><B>CarServ </B>est une solution web complète pour la location et l'achat des voitures en ligne, vous permet de connaître, en temps réel, la disponibilité des voitures dans le parc, et de réaliser des paiements ou opérations périodiques que vous vous devez d'honorer. Elle autorise la centralisation et le suivi de chacune de vos locations et/ou prestations. De la gestion des réservations à l’organisation des réceptions, tout en passant par l’édition de vos devis.</p>
+                    </div>
+                 <div class="row g-4 mb-3 pb-3">
+                    <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
                         <div class="d-flex">
                             <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1" style="width: 45px; height: 45px;">
-                                <span class="fw-bold text-secondary">01</span>
+                                <span class="fw-bold text-secondary"><B>01</B></span>
                             </div>
                             <div class="ps-3">
-                                <h6>Fiabilité</h6>
-                                <span>les données fournies par l’application doivent être fiables.</span>
+                            <br>
+                                <h6><B>Gestion des vèhicules</B></h6>
+                               
                             </div>
                         </div>
                     </div>
                     <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
                         <div class="d-flex">
                             <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1" style="width: 45px; height: 45px;">
-                                <span class="fw-bold text-secondary">02</span>
+                                <span class="fw-bold text-secondary"><B>02</B></span>
                             </div>
                             <div class="ps-3">
-                                <h6>Sécurité</h6>
-                                <span>l’application garantit la sécurité des données et sépare les espaces en donnant des droits d’accès qui diffère d’un utilisateur à un autre selon son profil pour éviter la perte de données ou leur modification par des pirates</span>
+                            <br>
+                                <h6><B>Gestion des clients</B></h6>
+                              
                             </div>
                         </div>
                     </div>
                     <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
                         <div class="d-flex">
                             <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1" style="width: 45px; height: 45px;">
-                                <span class="fw-bold text-secondary">03</span>
+                                <span class="fw-bold text-secondary"><B>03</B></span>
                             </div>
                             <div class="ps-3">
-                                <h6>Awards Winning Workers</h6>
-                                <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                                <br>
+                                <h6><B>Gestion des documents administratifs</B></h6>
+                                
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                            <div class="d-flex">
+                                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1" style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-secondary"><B>04</B></span>
+                                </div>
+                                <div class="ps-3">
+                                    <br>
+                                    <h6><B>Gestion des réservations</B></h6>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -245,86 +263,81 @@
 
 <!-- FAQ Start -->
 <div class="container-xxl service py-5">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h1 class="mb-5">Question fréquemment posée</h1>
-        </div>
-        <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="col-lg-4">
-                <div class="nav w-100 nav-pills me-4">
-                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                        <i class="fa fa-car-side fa-2x me-3"></i>
-                        <h4 class="m-0"> Est ce que je dois installer un matériel ou logiciel spécifique sur mon ordinateur pour utiliser CarServ? </h4>
-                    </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                        <i class="fa fa-car fa-2x me-3"></i>
-                        <h4 class="m-0"> Comment créer mon compte CarServ? </h4>
-                    </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                        <i class="fa fa-cog fa-2x me-3"></i>
-                        <h4 class="m-0">Est ce que les autres clients peuvent consulter mes données ? </h4>
-                    </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                        <i class="fa fa-oil-can fa-2x me-3"></i>
-                        <h4 class="m-0">Mes données sont sauvergardés au cas de probléme?</h4>
-                    </button>
-                </div>
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <br><br>
+                <h1 id="faq" class="mb-5">Question fréquemment posée</h1>
             </div>
-            <div class="col-lg-8">
-                <div class="tab-content w-100">
-                    <div class="tab-pane fade show active" id="tab-pane-1">
-                        <div class="row g-4">
-                            <div class="col-md-6" style="min-height: 350px;">
-                                <div class="position-relative h-100">
-                                    <img class="position-absolute img-fluid w-100 h-100" src="welcome/img/service-1.jpg"
-                                        style="object-fit: cover;" alt="">
+            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4" >
+                    <div class="nav w-100 nav-pills me-4">
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <i class="fa fa-car fa-2x me-3"></i>
+                            <h4 class="m-0" style="color:black"> Comment créer mon compte CarServ? </h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <i class="fa fa-cog fa-2x me-3"></i>
+                            <h4 class="m-0" style="color:black">Est ce que les autres clients peuvent consulter mes données ? </h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <i class="fa fa-car-side fa-2x me-3"></i>
+                            <h4 class="m-0" style="color:black">Mes données sont sauvergardés au cas de probléme?</h4>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content w-100">
+                        <div class="tab-pane fade show active" id="tab-pane-1">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="welcome/img/ml.jfif"
+                                           style="object-fit: cover;" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
-                                <p class="mb-4">Absolument pas, vous avez besoin juste d'une connexion Internet et d'un navigateur web, CarServ marche sur toutes les plate-formes, et tous les navigateurs web (Internet Explorer, Chrome, Mozilla Firefox, Safari...).</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="tab-pane-2">
-                        <div class="row g-4">
-                            <div class="col-md-6" style="min-height: 350px;">
-                                <div class="position-relative h-100">
-                                    <img class="position-absolute img-fluid w-100 h-100" src="welcome/img/service-2.jpg"
-                                        style="object-fit: cover;" alt="">
+                        <div class="tab-pane fade" id="tab-pane-2">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 400px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="welcome/img/qes.jfif"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
-                                <p class="mb-4">  Vous pouvez créer votre compte directement depuis notre application web, dirigez-vous à la page accueil, cliquez sur le bouton "S'inscrire", vous devrez rentrer vos informations personnelles,votre compte sera activé dès que vos informations auront été validé.</p> 
+                                <div  class="col-md-6">
+                                    <br><br>
+                                    <h4 style="text-align:center" class="mb-3">Vous pouvez créer votre compte directement depuis notre application web, dirigez-vous à la page accueil, cliquez sur le bouton "S'inscrire", vous devrez rentrer vos informations personnelles,votre compte sera activé dès que vos informations auront été validé.</h4>
+                              
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="tab-pane-3">
-                        <div class="row g-4">
-                            <div class="col-md-6" style="min-height: 350px;">
-                                <div class="position-relative h-100">
-                                    <img class="position-absolute img-fluid w-100 h-100" src="welcome/img/service-3.jpg"
-                                        style="object-fit: cover;" alt="">
+                        <div class="tab-pane fade" id="tab-pane-3">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 400px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="welcome/img/sec.jfif"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
-                                <p class="mb-4">NON, chaque client a un espace isolé sur le serveur, ce qui assure une meilleure sécurité et protection des données.</p>
+                                <div class="col-md-6">
+                                    <br><br><br><br>
+                                        <h4 style="text-align:center" class="mb-3">NON, chaque client a un espace isolé sur le serveur, ce qui assure une meilleure sécurité et protection des données.</h4>
+                                    </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="tab-pane-4">
-                        <div class="row g-4">
-                            <div class="col-md-6" style="min-height: 350px;">
-                                <div class="position-relative h-100">
-                                    <img class="position-absolute img-fluid w-100 h-100" src="welcome/img/service-4.jpg"
-                                        style="object-fit: cover;" alt="">
+                        <div class="tab-pane fade" id="tab-pane-4">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 420px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="welcome/img/back.jfif"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
-                                <p class="mb-4">Tous les comptes CarServ sont sauvegardés de façon quotidienne, afin de ne jamais perdre les précieuses données relatives à votre activité</p>
+                                <div class="col-md-6">
+                                   <br><br><br><br>
+                                    <h4 style="text-align:center" class="mb-3">Tous les comptes CarServ sont sauvegardés de façon quotidienne, afin de ne jamais perdre les précieuses données relatives à votre activité</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -332,7 +345,7 @@
             </div>
         </div>
     </div>
-</div>
+
 <!-- FAQ End -->
 
 
@@ -340,13 +353,13 @@
 <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div class="container">
         <div class="text-center">
-            <h1 class="mb-5">Témoignages Clients</h1>
+            <h1 id="tem" class="mb-5">Témoignages Clients</h1>
         </div>
         <div class="owl-carousel testimonial-carousel position-relative">
             <div class="testimonial-item text-center">
                 <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="welcome/img/testimonial-1.jpg" style="width: 80px; height: 80px;">
                 <h5 class="mb-0">Houda Nasibi</h5>
-                <p>Profession</p>
+              <br>
                 <div class="testimonial-text bg-light text-center p-4">
                 <p class="mb-0">Je recommande vivement cette agence de location grand professionnalisme de leur part je n'ai pas été déçu de leur service et de leur prestation.</p>
                 </div>
@@ -354,7 +367,7 @@
             <div class="testimonial-item text-center">
                 <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="welcome/img/testimonial-2.jpg" style="width: 80px; height: 80px;">
                 <h5 class="mb-0">Amine Alaoui</h5>
-                <p>Profession</p>
+             <br>
                 <div class="testimonial-text bg-light text-center p-4">
                 <p class="mb-0">Une tres bonne adresse. J'ai loué plusieurs fois chez CarServ et je suis vraiment satisfait de leurs professionnalisme et de leurs sérieux, je recommande vivement.</p>
                 </div>
@@ -362,7 +375,7 @@
             <div class="testimonial-item text-center">
                 <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="welcome/img/testimonial-3.jpg" style="width: 80px; height: 80px;">
                 <h5 class="mb-0">Sami Bennani</h5>
-                <p>Profession</p>
+            <br>
                 <div class="testimonial-text bg-light text-center p-4">
                 <p class="mb-0">Satisfaction totale! Bravo un grand professionalisme, ne peux que recommander. Mon seul souhait est de retrouver les memes prestations l'année prochaine..</p>
                 </div>
@@ -370,7 +383,7 @@
             <div class="testimonial-item text-center">
                 <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="welcome/img/testimonial-4.jpg" style="width: 80px; height: 80px;">
                 <h5 class="mb-0">Nadine Bennis</h5>
-                <p>Profession</p>
+              <br>
                 <div class="testimonial-text bg-light text-center p-4">
                 <p class="mb-0">Ponctualité, disponibilité, voitures neuves et propres et des prix très compétitifs. Je recommande pour ceux qui cherchent à louer une voiture en Tunisie..</p>
                 </div>
@@ -396,6 +409,7 @@
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Horaires d'ouvertures</h4>
                 <h6 class="text-light">Lundi - Vendredi:</h6>
@@ -403,6 +417,7 @@
                 <h6 class="text-light">Samedi - Dimanche:</h6>
                 <p class="mb-0">09.00 AM - 12.00 PM</p>
             </div>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Services</h4>
                 <a class="btn btn-link" href="">Location</a>

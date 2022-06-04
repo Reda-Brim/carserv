@@ -144,9 +144,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </ul>
   </nav>
   <!-- /.navbar -->
-
+ 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #4682B4;" >
+  
     <!-- Brand Logo -->
     <a href="{{route('admin.home')}}" class="brand-link">
       <img src="{{asset('Admin-assets/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
@@ -168,7 +169,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- SidebarSearch Form -->
       <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="chercher" aria-label="Search">
           <div class="input-group-append">
             <button class="btn btn-sidebar">
               <i class="fas fa-search fa-fw"></i>
@@ -182,7 +183,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+             
           <li class="nav-item">
+         
                 <a href="{{route('admin.home')}}" class="nav-link {{(request()->is('admin/home*')) ? 'active' : ''}}">
                   <i class="nav-icon fas fa-home"></i>
                   <p>
@@ -190,15 +193,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     {{-- <span class="right badge badge-danger">New</span> --}}
                   </p>
                 </a>
+                
           </li>
+               
 
 
-      <li class="nav-item">
-        <a href="#" class="nav-link ">
-          <i class="nav-icon fas  fa-users"></i>
+    <li class="nav-item">
+            <a href="#" class="nav-link ">
+          <i class="nav-icon fas  fa-users"></i>  
           <p>
             Clients
-           
             <i class=" bi bi-people right fas fa-angle-left"></i>
           </p>
         </a>
@@ -215,9 +219,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <p>Nouveau client</p>
             </a>
           </li>
-
         </ul>
+        
       </li>
+
 
       <li class="nav-item">
         <a href="#" class="nav-link ">
@@ -230,18 +235,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </a>
         <ul class="nav nav-treeview">
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{route('admin.Liste_vehicules')}}" class="nav-link">
               <i class="fa fa-list nav-icon"></i>
               <p>Listes des véhicules </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{route('admin.Nouveau_vehicules')}}" class="nav-link">
               <i class="fa fa-plus-square nav-icon"></i>
               <p>Nouveau véhicule</p>
             </a>
           </li>
-
+        
         </ul>
       </li>
 
@@ -284,6 +289,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </nav>
       <!-- /.sidebar-menu -->
     </div>
+   
     <!-- /.sidebar -->
   </aside>
 

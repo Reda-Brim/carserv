@@ -11,7 +11,7 @@
             <div class="card">
                 <div class="card-header">
                     <h4>
-                       Modifier Vehicule 
+                       Modifier Véhicule 
                         <a href="" class="btn btn-danger float-right">Retour</a>                      
                     </h4>                   
                 </div>
@@ -35,7 +35,7 @@
                             <span style="color:red">@error('matricule'){{$message}}@enderror</span>
                         </div>
                         <div class="form-group mb-3">
-                            <label for="anneeModele">Année Modele</label>
+                            <label for="anneeModele">Année Modéle</label>
                             <input type="text" name="AnneeModele" class="form-control" value="{{$Info->AnneeModele}}">
                             <span style="color:red">@error('AnneeModele'){{$message}}@enderror</span>
                         </div>
@@ -50,7 +50,7 @@
                             <span style="color:red">@error('CoutParJour'){{$message}}@enderror</span>
                         </div>
                         <div class="form-group mb-3">
-                            <label for="modele">Modele</label>
+                            <label for="modele">Modéle</label>
                             <input type="text" name="Modele" class="form-control" value="{{$Info->Modele}}">
                             <span style="color:red">@error('Modele'){{$message}}@enderror</span>
                         </div>

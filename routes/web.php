@@ -64,6 +64,10 @@ Route::prefix('admin')->name('admin.')->group(function(){
         Route::get('supprimer_client/{id}',[AdminController::class,'supprimer_client'])->name('supprimer_client');
         Route::get('modifier_client/{id}',[AdminController::class,'modifier_client'])->name('modifier_client');
         Route::post('editer_client',[AdminController::class,'editer_client'])->name('editer_client');
+        //impression
+        Route::get('/impression_clients',[AdminController::class,'impression_clients'])->name('impression_clients');
+       
+
 
         // Route::view('/Liste_vehicules','dashboard.admin.liste_vehicules')->name('liste_vehicules');
         // Route::view('/Nouveau_vehicules','dashboard.admin.Nouveau_vehicules')->name('Nouveau_vehicules');
@@ -79,14 +83,16 @@ Route::prefix('admin')->name('admin.')->group(function(){
 
         Route::post('editer_vehicule',[AdminController::class,'editer_vehicule'])->name('editer_vehicule');
         Route::get('supprimer_vehicule/{id}',[AdminController::class,'supprimer_vehicule'])->name('supprimer_vehicule');
-
-
-      
-
-
+        //impression
+       
+        Route::get('/impression_vehicules',[AdminController::class,'impression_vehicules'])->name('impression_vehicules');
+   
 
     });
+   
     Route::view('/profile','dashboard.admin.profile')->name('profile');
+
+  
   
  
     // Route::post('update-profile-info',[AdminController::class,'updateInfo'])->name('adminUpdateInfo');

@@ -33,7 +33,7 @@
         <div class="row">
           <div class="col-md-6 mb-4">
               <div class="form-outline">
-                  <input type="text" name="prenom" class="form-control" placeholder="Prenom" value="{{old ('prenom')}}">
+                  <input type="text" name="prenom" class="form-control" placeholder="Prénom" value="{{old ('prenom')}}">
                   <label class="form-label" for="prenom">Prénom</label>
                   <span class="text-danger">@error('prenom'){{$message}}@enderror</span>
                 </div>
@@ -61,7 +61,7 @@
             </div>
           <div class="col-md-6 mb-4">
             <div class="form-outline">
-              <input type="text" name="telephone" class="form-control" placeholder="telephone" value="{{old ('telephone')}}"/>
+              <input type="text" name="telephone" class="form-control" placeholder="Téléphone" value="{{old ('telephone')}}"/>
               <label class="form-label" for="telephone">Telephone</label>
               <span class="text-danger">@error('telephone'){{$message}}@enderror</span>
            </div>
@@ -70,14 +70,14 @@
         </div>
 
         <div class="form-outline  mb-4">
-          <input type="email" name="email" class="form-control" placeholder="email" value="{{old ('email')}}" >
-          <label class="form-label" for="email">email</label>
+          <input type="email" name="email" class="form-control" placeholder="Email" value="{{old ('email')}}" >
+          <label class="form-label" for="email">Email</label>
           <span class="text-danger">@error('email'){{$message}}@enderror</span>
         </div>
         <div class="row">
           <div class="col-md-6 mb-4">
             <div class="form-outline">
-              <input type="password" name="password" class="form-control" placeholder="password" value="{{old ('password')}}"/>
+              <input type="password" name="password" class="form-control" placeholder="Password" value="{{old ('password')}}"/>
               <label class="form-label" for="password">Password</label>
               <span class="text-danger">@error('password'){{$message}}@enderror</span>
             </div>
@@ -86,15 +86,15 @@
 
           <div class="col-md-6 mb-4">
             <div class="form-outline">
-              <input type="password" name="cpassword" class="form-control" placeholder="confirm password" value="{{old ('cpassword')}}"/>
-              <label class="form-label" for="cpassword">confirm password</label>
+              <input type="password" name="cpassword" class="form-control" placeholder="Confirm password" value="{{old ('cpassword')}}"/>
+              <label class="form-label" for="cpassword">Confirm password</label>
               <span class="text-danger">@error('cpassword'){{$message}}@enderror</span>
             </div>
           </div>
         </div>
         <div class="form-outline mb-4">
-          <input type="file" name="picture" class="form-control" placeholder="picture" value="{{old ('picture')}}">
-          <label class="form-label" for="picture">image</label>
+          <input type="file" name="picture" class="form-control" placeholder="Picture" value="{{old ('picture')}}">
+          <label class="form-label" for="picture">Image</label>
           <span class="text-danger">@error('picture'){{$message}}@enderror</span>
         </div>
   

@@ -33,14 +33,14 @@
                         <div class="row">
                             <div class="col-md-6 mb-4">
                               <div class="form-outline">
-                                <input type="text" name="prenom" class="form-control" placeholder="Entrer prenom" value="{{$Info_client->prenom}}" >
-                                <label class="form-label" for="prenom">Prenom</label>
+                                <input type="text" name="prenom" class="form-control" placeholder="Entrer votre prénom" value="{{$Info_client->prenom}}" >
+                                <label class="form-label" for="prenom">Prénom</label>
                                 <span class="text-danger">@error('prenom'){{$message}}@enderror</span>
                               </div>
                             </div>
                             <div class="col-md-6 mb-4">
                               <div class="form-outline">
-                                <input type="text" name="nom" class="form-control" placeholder="Entrer nom" value="{{$Info_client->nom}}"/>
+                                <input type="text" name="nom" class="form-control" placeholder="Entrer votre nom" value="{{$Info_client->nom}}"/>
                                 <label class="form-label" for="nom">Nom</label>
                                 <span class="text-danger">@error('nom'){{$message}}@enderror</span>
                               </div>
@@ -51,15 +51,15 @@
                           <div class="row">
                             <div class="col-md-6 mb-4">
                               <div class="form-outline">
-                                <input type="text" name="cin" class="form-control" placeholder="Entrer cin" value="{{$Info_client->cin}}" >
+                                <input type="text" name="cin" class="form-control" placeholder="Entrer votre cin" value="{{$Info_client->cin}}" >
                                 <label class="form-label" for="cin">Cin</label>
                                 <span class="text-danger">@error('cin'){{$message}}@enderror</span>
                               </div>
                             </div>
                             <div class="col-md-6 mb-4">
                               <div class="form-outline">
-                                <input type="text" name="telephone" class="form-control" placeholder="Entrer numero telephone" value="{{$Info_client->telephone}}"/>
-                                <label class="form-label" for="telephone">Telephone</label>
+                                <input type="text" name="telephone" class="form-control" placeholder="Entrer votre numéro téléphone" value="{{$Info_client->telephone}}"/>
+                                <label class="form-label" for="telephone">Téléphone</label>
                                 <span class="text-danger">@error('telephone'){{$message}}@enderror</span>
                               </div>
                             </div>
@@ -85,7 +85,7 @@
                             <span class="text-danger">@error('cpassword'){{$message}}@enderror</span>
                           </div>
                           <div class="form-group mb-3">
-                            <label for="picture" >image client</label>
+                            <label for="picture" >Image client</label>
                             <input type="file" name="picture"  class="form-control" value="{{$Info_client->picture}}">
                         </div>
                         <div class="form-group mb-3">
