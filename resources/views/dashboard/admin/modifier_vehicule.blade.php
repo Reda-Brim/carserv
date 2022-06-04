@@ -11,8 +11,13 @@
             <div class="card">
                 <div class="card-header">
                     <h4>
+<<<<<<< HEAD
                        Modifier Véhicule 
                         <a href="" class="btn btn-danger float-right">Retour</a>                      
+=======
+                       Modifier Vehicule 
+                        <a href="{{route('admin.Liste_vehicules')}}" class="btn btn-danger float-right">Retour</a>                      
+>>>>>>> 683779a976978318f435f350d4e87db4f474077a
                     </h4>                   
                 </div>
                 <div class="card-body">

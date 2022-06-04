@@ -34,7 +34,7 @@
               ">
             <div class="card-body p-5 shadow-5 text-center">
               <h2 class="fw-bold mb-5">S'inscrire</h2>
-              <form action="{{route('user.create')}}" method="POST" autocomplete="off">
+              <form action="{{route('user.create')}}" method="POST" autocomplete="off" enctype="multipart/form-data">
                 @if(Session::get('succes'))
                 <div class="alert alert-success">
                   {{Session::get('succes')}}
@@ -102,6 +102,11 @@
                   <input type="password" name="cpassword" class="form-control" placeholder="Entrer confirm password" value="{{old ('cpassword')}}">
                   <label class="form-label" for="cpassword">Confirmer Mot de passe</label>
                   <span class="text-danger">@error('cpassword'){{$message}}@enderror</span>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="file" name="picture" class="form-control" placeholder="picture" value="{{old ('picture')}}">
+                  <label class="form-label" for="picture">image</label>
+                  <span class="text-danger">@error('picture'){{$message}}@enderror</span>
                 </div>
   
 

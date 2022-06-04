@@ -45,7 +45,7 @@ class UserController extends Controller
         }
         
         
-        $user->password = bcrypt($request->password);
+        $user->password = Bcrypt($request->password);
         $save = $user->save();
 
         if( $save ){
